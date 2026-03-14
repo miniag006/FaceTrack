@@ -53,20 +53,35 @@ FACETRACK/
 
 ## Setup
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+1. Install Git LFS before cloning or pulling the repository assets:
+
+```bash
+git lfs install
+```
+
+If Git LFS is not installed on your machine yet, download it from [git-lfs.com](https://git-lfs.com/) and then run the command above once.
+
+2. Clone the repository:
+
+```bash
+git clone https://github.com/Mohakkalra03/FaceTrack.git
+cd FaceTrack
+```
+
+3. Create and activate a virtual environment.
+4. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Optional database bootstrap:
+5. Optional database bootstrap:
 
 ```bash
 python setup_database.py
 ```
 
-4. Run the application:
+6. Run the application:
 
 ```bash
 python main.py
